@@ -12,7 +12,7 @@ public abstract class Reservation {
 
 	@Override
 	public String toString() {
-		return String.valueOf(jour) + "/" + String.valueOf(mois);
+		return "Le " + String.valueOf(jour) + "/" + String.valueOf(mois);
 	}
 
 }

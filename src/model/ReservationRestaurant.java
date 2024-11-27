@@ -14,7 +14,13 @@ public class ReservationRestaurant extends Reservation {
 	@Override
 	public String toString() {
 		String chaine = super.toString();
-		chaine += "\nTable";
-		return chaine;
+		chaine += "\nTable " + numTable + " pour le ";
+		if (numService == 1) {
+			chaine += "premier ";
+		} else {
+			chaine += "deuxième ";
+		}
+
+		return chaine + "service.";
 	}
 }
